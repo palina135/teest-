@@ -1,11 +1,46 @@
+@import "./partials/article/article.scss";
+body{
+  margin: 0;
+}
 body * {
   outline: 1px solid lightgrey;
 }
 .container{
-  max-width: 1200px;
-  height: 100px;
-  margin: 0 auto;
+ max-width: 1200px;
+ padding: 50px 0;
+ margin: 0 auto; 
 }
 footer{
-background-color: #fb9c06;
+  background-color: #fb9c06;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+.four-columns{
+  display: flex;
+}
+.four-columns__item{
+  width: 25%;
+
+}
+.header{
+  padding: 40px 0 15px 0;
+font-size: 26px;
+color: #fb9c06;
+text-align:center;
+text-decoration: underline;
+}
+.header.dots:after{
+content: "...";
+display:inline-block;
+text-decoration: underline;
+}
+.three-columns{
+  display: flex;
+}
+.three-columns__item{
+  width:33.3%;
+  padding: 0 50px;
+
+}
+
+

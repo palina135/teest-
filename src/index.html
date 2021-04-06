@@ -18,9 +18,43 @@ banner
       </div>
     </div>
     <main class="container"> 
-main content
+main content 
+<div class="four-columns">
+  <div class="four-columns__item">
+      @@include('./partials/article/_article.html',{ "header": "Hello world", "articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur fuga repellat harum accusamus minus soluta, porro, quo pariatur sunt culpa. Sint culpa dolorem aut animi quisquam, a alias recusandae. "} )
+  </div>
+  <div class="four-columns__item">
+    @@include('./partials/article/_article.html',  {"header": "Hello world", "articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur fuga repellat harum accusamus minus soluta, porro, quo pariatur sunt culpa. Sint culpa dolorem aut animi quisquam, a alias recusandae. "})
+  </div>
+  <div class="four-columns__item">
+    @@include('./partials/article/_article.html',  {"header": "Hello world", "articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur fuga repellat harum accusamus minus soluta, porro, quo pariatur sunt culpa. Sint culpa dolorem aut animi quisquam, a alias recusandae. "})
+  </div>
+  <div class="four-columns__item">
+    @@include('./partials/article/_article.html',  {"header": "Hello world", "articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur fuga repellat harum accusamus minus soluta, porro, quo pariatur sunt culpa. Sint culpa dolorem aut animi quisquam, a alias recusandae." })
+  </div>
+</div>
+<section class="section">
+  <header class="header">
+Meet the team
+  </header>
+  <div class="three-columns">
+    <div class="three-columns__item">
+    @@include('.partials/team.card/_team-card.html')  
+    </div>
+    <div class="three-columns__item">2</div>
+    <div class="three-columns__item">3</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="header dots">
+Send us a message
+  </div>
+</section>
+
     </main>
-    <footer> 
+    <footer>
+
       <div class="container">
 footer
       </div>
