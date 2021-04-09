@@ -1,3 +1,17 @@
 body * {
   outline: 1px solid lightgrey;
 }
+.container{
+  width: 500px;
+  margin: 0 auto ;
+  margin-bottom: 20px;
+  background-color:green;
+  color:violet;
+  padding: 20px  50px;
+}
+.two-columns{
+  display:flex;
+}
+.two-columns_item{
+  
+}
