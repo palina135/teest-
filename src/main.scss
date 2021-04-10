@@ -13,5 +13,34 @@ body * {
   display:flex;
 }
 .two-columns_item{
-  
+ width: 200px;
+ height: 200px;
+background-color: rgb(125, 202, 125);
+margin: 0 auto;
+margin-bottom: 20px;
+}
+.three-columns{
+  display:flex;
+  padding-bottom: 20px;
+}
+.three-columns_item1{
+ width: 33.3%;
+ background-color: aqua;
+ min-height: 400px; 
+}
+.three-columns_item2{
+  width: 33.3%;
+  background-color: black;
+  min-height: 400px;
+}
+.three-columns_item3{
+  width: 33.3%;
+  background-color: chocolate;
+  min-height: 400px;
+}
+.footer{
+width: 70%;
+margin: 0 auto;
+background-color: rgb(223, 107, 127);
+padding: 20px 50px;
 }
