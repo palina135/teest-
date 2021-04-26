@@ -1,7 +1,7 @@
 .article p {
-    color: rgb(34, 20, 218);
+    color: black;
     font-size: 14px;
-    font-style: italic;
+    font-weight: bold;
     text-align: justify;
     padding: 5px;
 }
@@ -12,8 +12,4 @@
     text-transform: lowercase;
     display: block;
     text-align: right;
-}
-.article img {
-    float: right;
-    margin: 5px;
 }

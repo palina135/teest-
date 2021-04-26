@@ -18,7 +18,7 @@ banner
       </div>
     </div>
     <main class="container"> 
-main content 
+ 
 <div class="four-columns">
   <div class="four-columns__item">
       @@include('./partials/article/_article.html',{ "header": "Hello world", "articleText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequuntur fuga repellat harum accusamus minus soluta, porro, quo pariatur sunt culpa. Sint culpa dolorem aut animi quisquam, a alias recusandae. "} )
@@ -38,15 +38,18 @@ main content
 Meet the team
   </header>
   <div class="three-columns">
+      <div class="three-columns__item">
+       @@include('./partials/team-card/_team-card2.html', {"articleText1": "Hoof is our most talanted designer. However he is not talkative type and i would advice not getting on the wrong side of him." })
+      </div>
+    
     <div class="three-columns__item">
-      @@include('./partials/team-card/_team-card.html')
+      @@include('./partials/team-card/_team-card.html', {"articleText2": "Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too. "})
     </div>
+    
     <div class="three-columns__item">
-      @@include('./partials/team-card/_team-card.html')
+      @@include('./partials/team-card/_team-card3.html', {"articleText3": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd." })
     </div>
-    <div class="three-columns__item">
-      @@include('./partials/team-card/_team-card.html')
-    </div>
+   
   </div>
 </section>
 
