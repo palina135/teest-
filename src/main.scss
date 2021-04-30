@@ -88,9 +88,29 @@ text-decoration: underline;
   float: right;
  }
 
- .container p{
-   font-size: small;
-   text-align: center;
-   color: black;
- }
+.sprite p{
+  color: black;
+  font-size: small;
+  text-align: center;
+}
+
+.imagerabbit{
+  float: left;
+  margin: 5px 0 5px 5px;
+}
+
+.text{
+ display: flex; 
+}
+
+.text.orange{
+  color:#fb9c06;
+  font-size: 40px;
+}
+
+.text.rabbit{
+  color: gray;
+  font-size: 55px;
+  text-transform: uppercase;
+}
 
