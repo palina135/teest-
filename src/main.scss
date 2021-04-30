@@ -1,5 +1,7 @@
 @import "./partials/article/article.scss";
 @import "./partials/team-card/team-card.scss";
+@import "./partials/sprites.scss";
+
 body{
   margin: 0;
 }
@@ -8,8 +10,11 @@ body * {
 }
 .container{
  max-width: 1200px;
- padding: 50px 0;
+ padding: 80px 0;
  margin: 0 auto; 
+ color: lightgray;
+ font-size: 35px;
+ text-align: center;
 }
 footer{
   background-color: #fb9c06;
@@ -47,3 +52,44 @@ text-decoration: underline;
 
 }
 
+.three-lines__item1{
+  text-align: left;
+  color: #fb9c06;
+  font-size: 25px;
+  padding: 5px 0 5px 0;
+}
+
+.input-item{
+  width: 75%;
+  background-color: lightgray;
+  height: 15px;
+   
+}
+
+.button {
+	font-size: 14pt;
+	color: white;
+	background: #fb9c06;
+	height: 55px;
+	border: 1px solid #F5C4AB;
+  position: absolute;
+  right: 150px;
+}
+.button:hover {
+	border: 1px solid white;
+  cursor: pointer;
+}
+
+.sprite{
+  display: inline-block;
+  padding: 10px 10px 0 10px;
+ margin-left: 20px;
+ margin-bottom: 100px; 
+  float: right;
+ }
+
+ .container p{
+   font-size: small;
+   text-align: center;
+   color: black;
+ }

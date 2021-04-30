@@ -9,8 +9,21 @@
   </head>
   <body>
     <header class="container" >
-header
-      
+<div class="sprite home">
+ <p>HOME</p> 
+</div>
+<div class="sprite info">
+  <p>INFO</p>
+</div>
+<div class="sprite work">
+  <p>WORK</p>
+</div>
+<div class="sprite blog">
+  <p>BLOG</p>
+</div>
+<div class="sprite mail">
+  <p>CONTACT</p>
+</div>
     </header>
     <div class="banner"> 
       <div class="container">
@@ -39,7 +52,8 @@ Meet the team
   </header>
   <div class="three-columns">
       <div class="three-columns__item">
-       @@include('./partials/team-card/_team-card2.html', {"articleText1": "Hoof is our most talanted designer. However he is not talkative type and i would advice not getting on the wrong side of him." })
+       @@include('./partials/team-card/_team-card2.html', 
+       {"articleText1": "Hoof is our most talanted designer. However he is not talkative type and i would advice not getting on the wrong side of him." })
       </div>
     
     <div class="three-columns__item">
@@ -57,13 +71,29 @@ Meet the team
   <div class="header dots">
 Send us a message
   </div>
+     <div class="three-lines__item1">
+       Name:
+       <input class="input-item" type="name" name="username" placeholder="">
+      </div>
+
+     <div class="three-lines__item1">
+       Email:
+       <input class="input-item" type="email" name="email" placeholder="">
+     </div>
+
+      <div class="three-lines__item1">
+        Message:
+        <input class="input-item" type="message" name="message" placeholder="">
+   </div>
+   <input class="button" type="button" name="button" value="submit">
+
 </section>
 
     </main>
     <footer>
 
       <div class="container">
-footer
+COPYRIGHT ORANGE-RABBIT - DESIGNED BY JAKE BHATT.
       </div>
     </footer>
   </body>
