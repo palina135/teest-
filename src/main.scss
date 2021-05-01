@@ -1,6 +1,7 @@
 @import "./partials/article/article.scss";
 @import "./partials/team-card/team-card.scss";
 @import "./partials/sprites.scss";
+@import "./partials/menu-item/menu-item.scss";
 
 body{
   margin: 0;
@@ -80,37 +81,34 @@ text-decoration: underline;
   cursor: pointer;
 }
 
-.sprite{
-  display: inline-block;
-  padding: 10px 10px 0 10px;
- margin-left: 20px;
- margin-bottom: 100px; 
-  float: right;
- }
-
-.sprite p{
-  color: black;
-  font-size: small;
-  text-align: center;
+div.wrapper_rabbit{
+  height: 120px;
+  margin-left: 20px;
 }
 
-.imagerabbit{
-  float: left;
-  margin: 5px 0 5px 5px;
+.rabbitmenu{
+  max-width:100px;
 }
 
-.text{
- display: flex; 
+.wrapper_rabbit{
+  align-items: center;
+  height: 120px;
+  margin-left: 20px;
 }
 
-.text.orange{
-  color:#fb9c06;
-  font-size: 40px;
+.text_rabbit{
+  margin: 0 40px;
 }
 
-.text.rabbit{
-  color: gray;
-  font-size: 55px;
-  text-transform: uppercase;
+.text_rabbit p{
+  font-size: 34px;
+  margin: 20px 0 0 0;
 }
+
+.text_rabbit p:first-child{
+  font-size: 19px;
+  margin-top: 20px;
+}
+
+
 

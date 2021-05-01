@@ -1,0 +1,23 @@
+.menu-item2{
+    display: inline-block;
+    padding: 0 15px;
+    margin-right: 3px;
+    text-decoration: none;
+
+    &:hover{
+        position:relative;
+        top: 2px;
+        left: 2px;
+
+    }
+
+    &sprite{
+        padding: 10px 10px;
+    }
+}
+
+.description{
+    color: grey;
+    font-size: 20px; 
+ }
+

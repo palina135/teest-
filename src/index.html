@@ -9,25 +9,33 @@
   </head>
   <body>
     <header class="container" >
-      <p> <img class="imagerabbit" src="./img/rabbit2.jpg">
-        <div class="text orange">orange</div>
-        <div class="text rabbit">rabbit</div>
-        </p>
-     <div class="sprite home">
-  <p>Home</p> 
-</div>
- <div class="sprite info"> 
-  <p>About</p>
-</div>
-<div class="sprite work">
-  <p>Work</p>
-</div>
-<div class="sprite blog">
-  <p>Blog</p>
-</div>
-<div class="sprite mail">
-  <p>Contact</p>
-</div>
+      <div class="wrapper_rabbit">
+        <img src="./img/rabbit2.jpg" alt="" class="rabbitmenu">
+        <div class="text_rabbit">
+           <p>orange</p>
+           <p>rabbit</p>
+        </div>
+      </div>
+   @@include('./partials/menu-item/_menu-item.html',
+   {
+     "item2": "home"
+   })
+   @@include('./partials/menu-item/_menu-item.html',
+   {
+     "item2": "info"
+   })
+   @@include('./partials/menu-item/_menu-item.html',
+   {
+     "item2": "work"
+   })
+   @@include('./partials/menu-item/_menu-item.html',
+   {
+     "item2": "blog"
+   })
+   @@include('./partials/menu-item/_menu-item.html',
+   {
+     "item2": "mail"
+   })
     </header>
     <div class="banner"> 
       <div class="container">
