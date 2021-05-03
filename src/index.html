@@ -10,12 +10,13 @@
   <body>
     <header class="container" >
       <div class="wrapper_rabbit">
-        <img src="./img/rabbit2.jpg" alt="" class="rabbitmenu">
+        <img align="left" src="./img/rabbit2.jpg"  class="rabbitmenu">
         <div class="text_rabbit">
            <p>orange</p>
            <p>rabbit</p>
         </div>
       </div>
+      <div class="main-menu">
    @@include('./partials/menu-item/_menu-item.html',
    {
      "item2": "home"
@@ -36,10 +37,12 @@
    {
      "item2": "mail"
    })
+      </div>
     </header>
     <div class="banner"> 
       <div class="container">
-     
+         <div class="banner_line first">do you like rabbits?</div>
+         <div class="banner_line second">do you like oranges?</div> 
       </div>
     </div>
     <main class="container"> 

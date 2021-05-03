@@ -16,6 +16,7 @@ body * {
  color: lightgray;
  font-size: 35px;
  text-align: center;
+ margin-top: 5px;
 }
 footer{
   background-color: #fb9c06;
@@ -24,6 +25,7 @@ footer{
 }
 .four-columns{
   display: flex;
+  margin: 0;
 }
 .four-columns__item{
   width: 25%;
@@ -82,7 +84,7 @@ text-decoration: underline;
 }
 
 div.wrapper_rabbit{
-  height: 120px;
+  height: 100px;
   margin-left: 20px;
 }
 
@@ -94,21 +96,67 @@ div.wrapper_rabbit{
   align-items: center;
   height: 120px;
   margin-left: 20px;
+  float: left;
+  justify-content: space-evenly;
 }
 
 .text_rabbit{
-  margin: 0 40px;
+  margin: 0 40px 5px 15px;
+  padding-left: 90px ;
 }
 
 .text_rabbit p{
   font-size: 34px;
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
 }
 
 .text_rabbit p:first-child{
   font-size: 19px;
-  margin-top: 20px;
+  margin-top: 18px;
+  color: #fb9c06;
 }
 
+.main-menu{
+  float: right;
+  display: flex;
+}
+
+.banner{
+  border-top: 5px solid #fb9c06;
+  border-bottom: 5px solid #fb9c06;
+  background-image: url('/img/orangebc.jpg');
+  background-size: cover;
+}
+
+.banner .container{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner_line{
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+ .first{
+  margin: 2px 0 5px 0;
+  padding: 10px;
+  background-color: bisque;
+  color: #fb9c06;
+  width: max-content;
+}
+
+.second{
+  margin: 2px 0 5px 0;
+  padding: 10px;
+  background-color: #fb9c06;
+  color: bisque;
+  width: max-content;
+}
 
 
