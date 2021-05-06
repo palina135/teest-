@@ -6,9 +6,11 @@
 body{
   margin: 0;
 }
+
 body * {
   outline: 1px solid lightgrey;
 }
+
 .container{
  max-width: 1200px;
  padding: 80px 0;
@@ -18,19 +20,23 @@ body * {
  text-align: center;
  margin-top: 5px ;
 }
+
 footer{
   background-color: #fb9c06;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .four-columns{
   display: flex;
   margin: 0;
 }
+
 .four-columns__item{
   width: 25%;
-
+  text-align: justify;
 }
+
 .header{
   padding: 40px 0 15px 0;
 font-size: 40px;
@@ -38,21 +44,22 @@ color: #fb9c06;
 text-align:center;
 text-decoration: underline;
 }
+
 .header.dots:after{
 content: "...";
 display:inline-block;
 text-decoration: underline;
 }
+
 .three-columns{
   display: flex;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
 }
+
 .three-columns__item{
   width:33.3%;
   padding: 0 50px;
   box-sizing: border-box;
-
 }
 
 .three-lines__item1{
@@ -65,8 +72,7 @@ text-decoration: underline;
 .input-item{
   width: 75%;
   background-color: lightgray;
-  height: 15px;
-   
+  height: 15px; 
 }
 
 .button {
@@ -78,6 +84,7 @@ text-decoration: underline;
   position: absolute;
   right: 150px;
 }
+
 .button:hover {
 	border: 1px solid white;
   cursor: pointer;
@@ -94,7 +101,7 @@ div.wrapper_rabbit{
 
 .wrapper_rabbit{
   align-items: center;
-  height: 120px;
+  //height: 150px;
   margin-left: 20px;
   float: left;
   justify-content: space-evenly;
