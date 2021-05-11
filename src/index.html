@@ -8,7 +8,7 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header class="container" >
+    <header class="container clearfix" >
       <div class="wrapper_rabbit">
         <img align="left" src="./img/rabbit2.jpg"  class="rabbitmenu">
         <div class="text_rabbit">
@@ -41,12 +41,14 @@
     </header>
 
     <div class="banner"> 
-      <div class="container">
+      <div class="container ">
+        <div class="general">
           <div class="banner_line first">
             do you like rabbits?
           </div>
               <div class="banner_line second">
                  do you like oranges?
+              </div>
               </div> 
       </div>
     </div>
@@ -72,16 +74,21 @@ Meet the team
   </header>
   <div class="three-columns">
       <div class="three-columns__item">
-       @@include('./partials/team-card/_team-card2.html', 
-       {"articleText1": "Hoof is our most talanted designer. However he is not talkative type and i would advice not getting on the wrong side of him." })
+       @@include('./partials/team-card/_team-card.html', 
+       {"articleText2": "Hoof is our most talanted designer. However he is not talkative type and i would advice not getting on the wrong side of him.",
+        "imagePath": "/img/rabbit.jpg" })
       </div>
     
     <div class="three-columns__item">
-      @@include('./partials/team-card/_team-card.html', {"articleText2": "Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too. "})
+      @@include('./partials/team-card/_team-card.html', 
+      {"articleText2": "Nibs is our go to woman. She's the ceo/director of orange rabbit and runs fast when she has too.",
+       "imagePath": "/img/horse.jpg"})
     </div>
     
     <div class="three-columns__item">
-      @@include('./partials/team-card/_team-card3.html', {"articleText3": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd." })
+      @@include('./partials/team-card/_team-card.html', 
+      {"articleText2": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd.", 
+       "imagePath": "/img/straus.jpg"})
     </div>
    
   </div>
@@ -101,7 +108,7 @@ Send us a message
        <input class="input-item" type="email" name="email" placeholder="">
      </div>
 
-      <div class="three-lines__item1">
+      <div class="three-lines__item1 case">
         Message:
         <input class="input-item" type="message" name="message" placeholder="">
    </div>
@@ -112,8 +119,8 @@ Send us a message
     </main>
 
     <footer>
-        <div class="container">
-          COPYRIGHT ORANGE-RABBIT - DESIGNED BY JAKE BHATT.
+        <div class="container footer">
+          <p class="copyright">COPYRIGHT ORANGE-RABBIT - DESIGNED BY JAKE BHATT.</p>
         </div>
     </footer>
   </body>

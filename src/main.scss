@@ -13,12 +13,25 @@ body * {
 
 .container{
  max-width: 1200px;
- padding: 80px 0;
  margin: 0 auto; 
  color: lightgray;
  font-size: 35px;
  text-align: center;
  margin-top: 5px ;
+}
+
+.container.clearfix{
+  height: 120px;
+}
+
+.container.footer{
+  height: 120px;
+}
+
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
 }
 
 footer{
@@ -38,7 +51,7 @@ footer{
 }
 
 .header{
-  padding: 40px 0 15px 0;
+padding: 40px 0 15px 0;
 font-size: 40px;
 color: #fb9c06;
 text-align:center;
@@ -69,10 +82,17 @@ text-decoration: underline;
   padding: 5px 0 5px 0;
 }
 
+.case{
+  margin-bottom: 65px;
+}
 .input-item{
   width: 75%;
   background-color: lightgray;
   height: 15px; 
+}
+
+.section{
+  position: relative;
 }
 
 .button {
@@ -82,7 +102,8 @@ text-decoration: underline;
 	height: 55px;
 	border: 1px solid #F5C4AB;
   position: absolute;
-  right: 150px;
+  right: 100px;
+  bottom: -58px;
 }
 
 .button:hover {
@@ -91,12 +112,12 @@ text-decoration: underline;
 }
 
 div.wrapper_rabbit{
-  height: 100px;
-  margin-left: 20px;
+  
+  margin-left: 10px;
 }
 
 .rabbitmenu{
-  max-width:100px;
+  max-width:110px;
 }
 
 .wrapper_rabbit{
@@ -104,12 +125,14 @@ div.wrapper_rabbit{
   //height: 150px;
   margin-left: 20px;
   float: left;
+  clear: fixed;
   justify-content: space-evenly;
 }
 
 .text_rabbit{
-  margin: 0 40px 5px 15px;
-  padding-left: 90px ;
+  margin: 0 40px 5px 5px;
+  padding-left: 10px ;
+  display: inline-block;
 }
 
 .text_rabbit p{
@@ -127,6 +150,7 @@ div.wrapper_rabbit{
 .main-menu{
   float: right;
   display: flex;
+  clear: fixed;
 }
 
 .banner{
@@ -137,7 +161,7 @@ div.wrapper_rabbit{
 }
 
 .banner .container{
-  height: 80px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,11 +171,15 @@ div.wrapper_rabbit{
 .banner_line{
   padding: 15px 0;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.general{
+  position: relative;
 }
 
  .first{
-  margin: 2px 0 5px 0;
+  margin: 2px 0 30px 0;
   padding: 10px;
   background-color: bisque;
   color: #fb9c06;
@@ -166,4 +194,9 @@ div.wrapper_rabbit{
   width: max-content;
 }
 
+.copyright{
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 43px;
+}
 
