@@ -75,16 +75,18 @@ text-decoration: underline;
   box-sizing: border-box;
 }
 
-.three-lines__item1{
-  text-align: left;
-  color: #fb9c06;
-  font-size: 25px;
-  padding: 5px 0 5px 0;
+.feedback{
+  display: grid;
+  grid-template-columns: minmax(100px, max-content) 1fr;
+  row-gap: 10px;
+  margin-bottom: 65px;
+
+       &__label{
+       color: #fb9c06;
+       padding-right: 25px;
+       }
 }
 
-.case{
-  margin-bottom: 65px;
-}
 .input-item{
   width: 75%;
   background-color: lightgray;
