@@ -9,4 +9,56 @@ body * {
 
 .line{
   display: flex;
+  height: 35px;
+  margin-bottom: 23px;
+
+  &__first{
+    display: flex;
+  }
+
+  &__block1{
+    padding: 7px 17px 5px 5px;
+    color: rgb(214, 202, 202);
+    background-color: rgb(39, 38, 38);
+  }
+
+  &__block2{
+    padding: 7px 30px 5px 9px;
+    color: rgb(37, 36, 36);
+    background-color: rgb(225, 221, 221);
+  }
+
+  &__block3{
+    padding: 7px 300px 5px 15px;
+    color: rgb(37, 36, 36);
+    background-color: rgb(225, 221, 221);
+  }
+}
+
+.theme{
+  font-size: 17px;
+}
+
+.jurgeon{
+  display: inline-block;
+  width: 620px;
+  height: 250px;
+  border-bottom: 5px solid rgb(177, 26, 26);
+
+  &__photo{
+float: left;
+  }
+}
+
+.firsttext{
+  padding: 5px 2px 23px 10px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.secondtext{
+  
+}
+.header{
+  height: 35px;
 }
