@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 body * {
   outline: 1px solid lightgrey;
 }
@@ -41,23 +42,33 @@ body * {
 
 .jurgeon{
   display: inline-block;
-  width: 620px;
+  width: 666px;
   height: 250px;
   border-bottom: 5px solid rgb(177, 26, 26);
 
   &__photo{
 float: left;
   }
+
+}
+
+.jurgeontext{
+  display: block;
+  margin-left: 400px;
 }
 
 .firsttext{
   padding: 5px 2px 23px 10px;
   font-size: 30px;
   text-align: left;
+  color: red;
+  font-family: 'PT Serif', serif;
 }
 
 .secondtext{
-  
+    font-family: 'PT Serif', serif;
+    font-size: 15px;
+    color: rgb(51, 47, 47);
 }
 .header{
   height: 35px;
