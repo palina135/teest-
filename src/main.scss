@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import "./partials/diagramma/dia.scss"
 body * {
   outline: 1px solid lightgrey;
 }
@@ -38,6 +39,10 @@ body * {
 
 .theme{
   font-size: 17px;
+}
+
+.partials{
+  display: inline-flex;
 }
 
 .jurgeon{
