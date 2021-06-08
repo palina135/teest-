@@ -56,7 +56,15 @@ body * {
          top: 1007px;
          font-weight: bold;
          font-size: 50px;
-       } 
+       }
+       
+       &__splider{
+         position: absolute;
+         left: 510px;
+         top: 1167px;
+         width: 305px;
+         height: 423px;
+       }
 }
 
 .archmove{
