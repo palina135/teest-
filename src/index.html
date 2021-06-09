@@ -56,7 +56,23 @@
                width="535"
                height="610">
              </div>
-             <!--здесь будут паршалы и картинки и текст-->
+             <div class="tree-columns">
+              <div class="three-columns__item">
+                 @@include('./partials/article/_article.html',
+                 {"articleText": "Build safe, comfortable and transparent with a project management application with a joint account.",
+                  "imagePath": "/src/img/house1.jpg" })
+              </div>
+              <div class="three-columns__item">
+                @@include('./partials/article/_article.html',
+                {"articleText": "There are no hidden costs. The value of the offer you get is the value you paid.",
+                 "imagePath": "/src/img/house2.jpg" })
+              </div>
+              <div class="three-columns__item">
+                @@include('./partials/article/_article.html',
+                {"articleText": "Monitor reports from the Arsitag team who check directly in the field.",
+                 "imagePath": "/src/img/house3.jpg" })
+              </div>
+             </div>
              <div>
                <input 
                type="submit" 
