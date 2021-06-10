@@ -91,19 +91,27 @@ body * {
           position: absolute;
           width: 204px;
           height: 56px;
-          left: 938px;
+          left: 1300px;
           top: 2383px;
           background-color: #FD665E;
         }
 
-        &__three-columns{
-          top: 1900px;
-          position: relative;
-          width: 600px;
-          left: 800px;
-        }
 }
+.archmove__three-columns {
+  width: 450px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  position: absolute;
+  top: 1900px;
+  left: 850px;
+  }
 
+  .archmove__threetext{
+    font-size: 20px;
+  }
 
 .website{
   position: relative;
