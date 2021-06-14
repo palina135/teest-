@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.scss">
     <title>First project</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script src="./js/main.js" defer></script>
+	<style>
+	
+	.house, .room, .archmove, .website, .project, .footer, .banner {
+		min-height: 500px;
+		max-width: 700px;
+		border: 1px solid black;
+	}
+	
+ .archmove__three-columns {
+  width:400px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  }
+	</style>
   </head>
   <body>
     <div class="container">
