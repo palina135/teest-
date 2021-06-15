@@ -4,10 +4,50 @@ body * {
 }
 
 .house, .room, .archmove, .website, .project, .footer, .banner {
-  min-height: 500px;
-  max-width: 700px;
+  max-width: 1440px;
   border: 1px solid black;
 }
+
+
+.header{
+  height: 96px;
+}
+
+
+.house{
+  height: 847px;
+}
+
+
+.room{
+  height: 720px;
+}
+
+
+.archmove{
+  height: 898px;
+}
+
+
+.website{
+  height: 588px;
+}
+
+
+.project{
+  height: 812px;
+}
+
+
+.banner{
+  height: 343px;
+}
+
+
+.footer{
+  height: 208px;
+}
+
 
 .archmove__three-columns {
 width:400px;
