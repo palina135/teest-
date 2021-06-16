@@ -8,43 +8,108 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
-          <div class="header">
-                <div class="line"> 
-                     <div class="line__first">
-                       <div class="line__block1 theme">
-                         Hot themes
-                       </div>
-                       <div class="line__block2 theme">
-                         Euro-2016 Playoffs
-                        </div>
-                       <div class="line__block3 theme">
-                         El'Classico
-                        </div>
-                     </div>
-                     
-                </div>
+    
+	<div class="wrapper">
+		<main class="news">
+			<div class="news__header">
+				<div class="header">
+					<ul class="main-menu">
+            <li class="main-menu__theme"><a href="#" class="reference">Hot themes</a></li>
+            <li class="main-menu__theme"><a href="#" class="reference">EURO-2016 Playoffs</a></li>
+            <li class="main-menu__theme"><a href="#" class="reference">El'Classico</a></li>
+        </ul>
+				</div>
+				<div class="jurgen">
+					<div class="jurgeon__image">
+						<img src="./img/firstphoto.jpg" alt="">
+					</div>
+					<div class="figure">
+						<p class="jurgen__text">Jurgen Klopp makes a sexy Liverpool.</p>
+						<p class="text text--black">Liverpool outkast Jose Enrique set to be handed lifeline by Jurgen Klopp.</p>
+						<div class="figure__diagram">
+							<div>
+								<p class="figure__diagram__message">
+                  <img src="./img/strel1.png.png" alt="">
+									7/20
+									<img src="./img/diag.png.png" alt="">
+                  <img src="./img/strel2.png.png" alt="">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                    <div class="jurgeon"> 
-                      <img src="./img/firstphoto.jpg"  class="jurgeon__photo">
-                     <div class="jurgeontext">
-                       <div class="firsttext"> 
-                       Jurgeon Klopp makes a sexy Liverpool 
-                    </div> 
-                      <div class="secondtext">
-                        Liverpool outcast Jose Enrique set to be handed lifeline by Jurgeon Klopp
-                      </div>
-                     </div>
-                      <div class="jurgeon-footer">
-                        <img src="./img/strel1.png.png" class="jurgeon-footer__picture">
-                        <div class="jurgeon-footer__text">7/20</div>
-                        <img src="./img/diag.png.png" class="jurgeon-footer__picture">
-                        <img src="./img/strel2.png.png" class="jurgeon-footer__picture">
-                      </div>
-                    </div> 
-          </div>
+				<div class="banner">	
+					<div class="main">
+						<h2 class="main__text">Main News</h2>
+					</div>
+					<div class="banner__include">
+						<div class="partials">
+							@@include('./partials/main-news/_main-news.html',
+							{"image":"/img/ball.png",
+							"cardContent":"The FIFA Ballon d'Or is an annual assotiation football award given by FIFA"})
+						</div>
+						<div class="partials">
+							@@include('./partials/main-news/_main-news.html',
+							{"image":"/img/messi.png",
+							"cardContent":"Messi got some ballons"})
+						</div>
+						<div class="partials">
+							@@include('./partials/main-news/_main-news.html',
+							{"image":"/img/ronaldu.png",
+							"cardContent":"CR7 also. but not so much"})
+						</div>
+						<div class="partials">
+							@@include('./partials/main-news/_main-news.html',
+							{"image":"/img/ribery.png",
+							"cardContent":"Ribery got vase"})
+						</div>
+					</div>
+				</div>
+			</div>
 
-    </div>
+			<div class="news__footer">
+				<div class="content">
+					<div class="last-news">
+						<div class="heading heading--red-line">
+							<h2 class="last-news__header">Last News</h2>
+						</div>
+						<div>
+							<ul class="last-news__list">
+                <li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+								<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="last-news">
+						<div class="heading heading--red-line">
+							<h2 class="main__text">News feed</h2>
+						</div>
+						<div class="special-picture">
+							<img src="./img/Zlatka.png" alt="">
+							
+								<a class="link link--blue">Zlatan Ibrahimovich on target as Sweden qualify with draw in Denmark</a>
+							
+						</div>
+						<ul class="last-news__list">	
+							<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+							<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+							<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+							<li><a href="#" class="last-news__item">Real Madrid players to gaffer:up at'em!</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+  </div>
   </body>
 </html>
 

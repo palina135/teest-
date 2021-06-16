@@ -1,92 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import "./partials/diagramma/dia.scss"
+@import "./partials/main-news/main-news.scss";
+
 body * {
   outline: 1px solid lightgrey;
+  
 }
 
 .wrapper{
-  width: 1200px;
-  margin: 0 auto ;
-}
-
-.line{
+  width: 1000px;
   display: flex;
-  height: 35px;
-  margin-bottom: 23px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 68%;
+  
 
-  &__first{
+  &__header{
     display: flex;
+    flex-direction: column;
   }
 
-  &__block1{
-    padding: 7px 17px 5px 5px;
-    color: rgb(214, 202, 202);
-    background-color: rgb(39, 38, 38);
-  }
-
-  &__block2{
-    padding: 7px 30px 5px 9px;
-    color: rgb(37, 36, 36);
-    background-color: rgb(225, 221, 221);
-  }
-
-  &__block3{
-    padding: 7px 300px 5px 15px;
-    color: rgb(37, 36, 36);
-    background-color: rgb(225, 221, 221);
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
   }
 }
 
-.theme{
-  font-size: 17px;
-}
 
-.jurgeon{
-  display: inline-block;
-  width: 666px;
-  height: 250px;
-  border-bottom: 5px solid rgb(177, 26, 26);
-
-  &__photo{
-float: left;
-  }
-
-}
-
-.jurgeontext{
-  display: block;
-  margin-left: 400px;
-}
-
-.firsttext{
-  padding: 5px 2px 23px 10px;
-  font-size: 30px;
-  text-align: left;
-  color: red;
-  font-family: 'PT Serif', serif;
-}
-
-.secondtext{
-    font-family: 'PT Serif', serif;
-    font-size: 15px;
-    color: rgb(51, 47, 47);
-}
-.header{
-  height: 35px;
-}
-
-.jurgeon-footer{
+.jurgen{
   display: flex;
-  justify-content: flex-end;
-  margin: 25px 10px 2px 0;
+  padding-top: 21px;
+  height: 250px;
+  border-bottom: 5px solid rgb(201, 24, 24);
+}
 
-  &__picture{
+
+.figure{
+  width: 100%;
+  padding: 0 52px 0 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  &__diagram{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+   &__message{
+    font-size: 16px;
+    margin: initial;
     margin: 5px;
+    font-weight: bold;
+     img{
+       position: relative;
+       top: 2px; 
+    }
+   }
   }
+}
 
-  &__text{
-    padding-top: 10px;
+
+.jurgen__text{
+  margin: initial;
+  font-size: 30px;
+  color: rgb(201, 24, 24);
+  font-family: serif;
+  word-spacing: 10px ;
+  &--black{
+    font-size: 14px;
+    font-family: sans-serif;
     color: black;
-    
+    line-height: 18px;
   }
+}
+
+.main-menu{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: initial;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: rgb(235, 235, 235);
+  &__theme{
+    position: relative;
+  } 
+}
+
+.reference{
+  display: block;
+  color: black;
+  padding: 10px;
+  &:hover{
+    background-color: rgb(88, 85, 85);
+  }
+}
+
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  &__include{
+      display: flex;
+      justify-content: space-between;
+  }
+}
+.main{
+  display: flex;
+  padding: 20px 0 10px;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid black;
+    bottom: 15px;
+    width: 100%;
+  }
+  &__text{
+    margin: 0;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: initial;
+    background-color: white;
+    z-index: 2;
+    color: blue;
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 5px;
+    }
+  }
+  &--red-line{
+    color: rgb(95, 95, 238);
+    &:after{
+      border-bottom: 2px solid rgb(201, 24, 24);
+    }
+  }
+  &--center-line{
+    justify-content: center;
+    color: rgb(126, 21, 126);
+    &:after{
+      bottom: 20px;
+    }
+    &>.main__text{
+      font-weight: bold;
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 5px;
+      }
+    }
+  }
+  &--underline{
+    &>.main__text{
+      z-index: 0;
+      bottom: 5px; 
+    }
+  }
+}
+
+
+.partials{
+ display: flex;
+ flex-direction: column;
+ flex-basis: 22%;
+}
+
+.last-news__item{
+  display: block;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    &:hover{
+      color: blue;
+      text-decoration: underline;
+    }
+}
+
+.last-news__header{
+  color: blue;
 }
