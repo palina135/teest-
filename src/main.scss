@@ -6,16 +6,14 @@ body * {
 }
 
 .wrapper{
-  width: 1000px;
-  display: flex;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 .news{
   display: flex;
   flex-direction: column;
-  flex-basis: 68%;
+  width: 65%;
   
 
   &__header{
@@ -25,7 +23,6 @@ body * {
 
   &__footer{
     display: flex;
-    justify-content: space-between;
     margin-top: 50px;
   }
 }
@@ -33,32 +30,41 @@ body * {
 
 .jurgen{
   display: flex;
-  padding-top: 21px;
+  padding-top: 20px;
   height: 250px;
-  border-bottom: 5px solid rgb(201, 24, 24);
+  border-bottom: 5px solid red;
+}
+
+
+.strel{
+
+  &:hover{
+    margin-left: 3px;
+    margin-top: 3px;
+  }
 }
 
 
 .figure{
   width: 100%;
-  padding: 0 52px 0 22px;
+  padding: 0 50px 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 
 
   &__diagram{
-    align-self: flex-end;
+   justify-content: flex-end;
+    margin-top: 40px;
     display: flex;
     align-items: center;
+
    &__message{
-    font-size: 16px;
-    margin: initial;
-    margin: 5px;
-    font-weight: bold;
-     img{
-       position: relative;
-       top: 2px; 
+    font-size: 15px;
+    margin: 7px;
+
+    img{
+      position: relative;
+      top: 3px; 
     }
    }
   }
@@ -66,28 +72,17 @@ body * {
 
 
 .jurgen__text{
-  margin: initial;
+  margin: auto;
   font-size: 30px;
-  color: rgb(201, 24, 24);
-  font-family: serif;
-  word-spacing: 10px ;
-  &--black{
-    font-size: 14px;
-    font-family: sans-serif;
-    color: black;
-    line-height: 18px;
-  }
+  color: red;
 }
 
 .main-menu{
   display: flex;
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: initial;
-  margin-top: 30px;
   cursor: pointer;
   font-size: 16px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(224, 215, 215);
+
   &__theme{
     position: relative;
   } 
@@ -97,79 +92,54 @@ body * {
   display: block;
   color: black;
   padding: 10px;
-  &:hover{
-    background-color: rgb(88, 85, 85);
-  }
+
+      &:hover{
+        background-color: rgb(88, 85, 85);
+      }
 }
 
 
 .banner{
   display: flex;
   flex-direction: column;
-  &__include{
-      display: flex;
-      justify-content: space-between;
-  }
+
+
+       &__include{
+           display: flex;
+           justify-content: space-between;
+       }
 }
+
+
 .main{
   display: flex;
   padding: 20px 0 10px;
   position: relative;
-  &:after{
-    content: '';
-    position: absolute;
-    border-bottom: 2px solid black;
-    bottom: 15px;
-    width: 100%;
-  }
-  &__text{
-    margin: 0;
-    position: relative;
-    font-family: sans-serif;
-    font-weight: initial;
-    background-color: white;
-    z-index: 2;
-    color: blue;
-    &:after{
-      content: '';
-      display: inline-block;
-      width: 5px;
-    }
-  }
-  &--red-line{
-    color: rgb(95, 95, 238);
-    &:after{
-      border-bottom: 2px solid rgb(201, 24, 24);
-    }
-  }
-  &--center-line{
-    justify-content: center;
-    color: rgb(126, 21, 126);
-    &:after{
-      bottom: 20px;
-    }
-    &>.main__text{
-      font-weight: bold;
-      &:before{
-        content: '';
-        display: inline-block;
-        width: 5px;
-      }
-    }
-  }
-  &--underline{
-    &>.main__text{
-      z-index: 0;
-      bottom: 5px; 
-    }
-  }
+
+
+       &:after{
+         content: '';
+         position: absolute;
+         border-bottom: 3px solid black;
+         bottom: 10px;
+         width: 100%;
+       }
+
+
+       &__text{
+         margin: 0;
+         position: relative;
+         background-color: white;
+        z-index: 2;
+         color: blue ;
+       }
 }
 
 
 .partials{
  display: flex;
  flex-direction: column;
- flex-basis: 22%;
+ flex-basis: 23%;
 }
 
 .last-news__item{
