@@ -1,6 +1,6 @@
 @import "./partials/article/article.scss";
 body * {
-  outline: 1px solid lightgrey;
+  outline: 1px solid #f0f0f0;
 }
 
 .house, .room, .archmove, .website, .project, .footer, .banner {
@@ -15,17 +15,66 @@ body * {
 
 
 .house{
-  height: 847px;
+  height: 970px;
+
+  &__dreamhouse{
+    font-size: 110px;
+    width: 820px;
+    font-weight: bold;
+  }
+
+  &__firsttext{
+    font-size: 18px;
+    width: 270px;
+    height: 130px;
+  }
+
+  &__button{
+    border: 2px solid #FD665E;
+    background-color: #FD665E;
+    font-size: 25px;
+    text-decoration: none;
+    color: #f0f0f0;
+    width: 135px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 
 .room{
-  height: 720px;
+  height: 900px;
+
+      &__secondtext{
+        font-size: 50px;
+        width: 535px;
+        height: 120px;
+      }
 }
 
 
 .archmove{
-  height: 898px;
+  height: 1050px;
+
+     &__text{
+       font-size: 53px;
+       width: 450px;
+       height: 120px;
+     }
+
+
+     &__secondbutton{
+      border: 2px solid #FD665E;
+      background-color: #FD665E;
+      font-size: 25px;
+      text-decoration: none;
+      color: #f0f0f0;
+      width: 135px;
+      height: 60px;
+      display: inline-block;
+      text-align: center;
+     }
 }
 
 
@@ -58,3 +107,72 @@ gap: 0px 0px;
 grid-auto-flow: row;
 }
 
+.search-box{
+  display: flex;
+  position: absolute;
+  background-color: #2f3640;
+  height: 30px;
+  border-radius: 40px;
+  padding: 8px;
+}
+
+
+.search-btn{
+  display: flex;
+  justify-content: center;
+  color: #f0f0f0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2f3640;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+
+.search-txt{
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  transition: .4s;
+  line-height: 30px;
+  width: 0;
+}
+
+
+.search-box:hover .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+
+.butt{
+
+display: inline-flex;
+justify-self: flex-end;
+  &__in{
+    border: 2px solid #f0f0f0;
+   font-size: 25px;
+   text-decoration: none;
+   color:#585858;
+   width: 90px;
+   height: 40px;
+   display: inline-block;
+   text-align: center;
+  }
+
+  &__up{
+    border: 2px solid #FD665E;
+    background-color: #FD665E;
+    font-size: 25px;
+    text-decoration: none;
+    color: #f0f0f0;
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+  }
+}
