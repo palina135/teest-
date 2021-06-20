@@ -1,7 +1,7 @@
 @import "./partials/article/article.scss";
 body * {
   outline: 1px solid #f0f0f0;
-  
+
 }
 
 .house, .room, .archmove, .website, .project, .footer, .banner {
@@ -51,6 +51,7 @@ body * {
         font-size: 50px;
         width: 535px;
         height: 120px;
+        font-weight: bold;
       }
 }
 
@@ -62,6 +63,7 @@ body * {
        font-size: 53px;
        width: 450px;
        height: 120px;
+       font-weight: bold;
      }
 
 
@@ -81,16 +83,61 @@ body * {
 
 .website{
   height: 588px;
+
+     &__thirdtext{
+       font-size: 50px;
+       width: 370px;
+       height: 120px;
+       font-weight: bold;
+     }
+
+     &__fourthtext{
+       width: 765px;
+       height: 204px;
+       font-size: 32px;
+     }
+
+     &__partial{
+       width: 216px;
+       height: 25px;
+       font-size: 26px;
+     }
 }
 
 
 .project{
-  height: 812px;
+  height: 900px;
+
+     &__fifthtext{
+       font-size: 48px;
+       width: 520px;
+       height: 120px;
+       font-weight: bold;
+     }
+
+     &__thirdbutton{
+      border: 2px solid #FD665E;
+      background-color: #FD665E;
+      font-size: 25px;
+      text-decoration: none;
+      color: #f0f0f0;
+      width: 135px;
+      height: 60px;
+      display: inline-block;
+      text-align: center;
+     }
 }
 
 
 .banner{
   height: 343px;
+
+     &__sixthtext{
+       font-size: 48px;
+       font-weight: bold;
+       width: 370px;
+       height: 60px;
+     }
 }
 
 
