@@ -1,6 +1,7 @@
 @import "./partials/article/article.scss";
 body * {
   outline: 1px solid #f0f0f0;
+  
 }
 
 .house, .room, .archmove, .website, .project, .footer, .banner {
@@ -164,6 +165,7 @@ justify-self: flex-end;
    text-align: center;
   }
 
+  
   &__up{
     border: 2px solid #FD665E;
     background-color: #FD665E;
