@@ -7,6 +7,8 @@
     <title>First project</title>
     <script src="./js/main.js" defer></script>
 	<script src="https://kit.fontawesome.com/e49fc50e75.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
   </head>
   <body>
     
@@ -40,34 +42,34 @@
 					</div>
 				</div>
 
-				<div class="banner">	
-					<div class="main">
-						<h2 class="main__text">Main News</h2>
-					</div>
-					<div class="banner__include">
-						<div class="partials">
-							@@include('./partials/main-news/_main-news.html',
-							{"image":"/img/ball.png",
-							"text2":"The FIFA Ballon d'Or is an annual assotiation football award given by FIFA"})
-						</div>
-						<div class="partials">
-							@@include('./partials/main-news/_main-news.html',
-							{"image":"/img/messi.png",
-							"text2":"Messi got some ballons"})
-						</div>
-						<div class="partials">
-							@@include('./partials/main-news/_main-news.html',
-							{"image":"/img/ronaldu.png",
-							"text2":"CR7 also. but not so much"})
-						</div>
-						<div class="partials">
-							@@include('./partials/main-news/_main-news.html',
-							{"image":"/img/ribery.png",
-							"text2":"Ribery got vase"})
-						</div>
-					</div>
+	     <div class="banner">	
+		     <div class="main">
+			     <h2 class="main__text">Main News</h2>
+		     </div>
+		     <div class="banner__include">
+			     <div class="partials">
+				     @@include('./partials/main-news/_main-news.html',
+				     {"image":"/img/ball.png",
+				     "text2":"The FIFA Ballon d'Or is an annual assotiation football award given by FIFA"})
+				 </div>
+			     <div class="partials">
+				     @@include('./partials/main-news/_main-news.html',
+				     {"image":"/img/messi.png",
+				     "text2":"Messi got some ballons"})
+			     </div>
+			     <div class="partials">
+				     @@include('./partials/main-news/_main-news.html',
+				     {"image":"/img/ronaldu.png",
+				     "text2":"CR7 also. but not so much"})
+			     </div>
+				<div class="partials">
+					@@include('./partials/main-news/_main-news.html',
+					{"image":"/img/ribery.png",
+					"text2":"Ribery got vase"})
 				</div>
 			</div>
+		</div>
+	</div>
 
 			<div class="news__footer">
 				<div class="content">
@@ -139,73 +141,106 @@
 					<div class="section__feature" >
 						@@include('./partials/news/_news-big.html',
 						{"image":"./img/cup.jpg",
-						"cardContent":"Here is now Leage Champions trophy looks like"})
+						"textAbout":"Here is now Leage Champions trophy looks like"})
 						<i class="fas fa-camera"></i>
 					</div>
 					<div class="section__feature">
 						@@include('./partials/news/_news-big.html',
 						{"image":"./img/cup.jpg",
-						"cardContent":"Here is now Leage Champions trophy looks like"})
+						"textAbout":"Here is now Leage Champions trophy looks like"})
 						<i class="fas fa-camera"></i>
 					</div>
 					<div class="section__feature">
 						@@include('./partials/news/_news-big.html',
 						{"image":"./img/cup.jpg",
-						"cardContent":"Here is now Leage Champions trophy looks like"})
+						"textAbout":"Here is now Leage Champions trophy looks like"})
 						<i class="fas fa-camera"></i>
 					</div>
 				</div>
-			</div>	
- 		</main>
-		 <aside class="aside">
-			<div class="video">
-				<div class="heading heading--center-line">
-					<h2 class="heading__title">Video </h2>
-				</div>
-				<div class="video__item">
-					@@include('./partials/news-card/_news-video-card.html',
-					{"image":"/img/videoOne.png",
-					"cardContent":"Here is now Leage Champions trophy looks like"})
-				</div>
-				<div class="video__item">
-					@@include('./partials/news-card/_news-video-card.html',
-					{"image":"/img/videoOne.png",
-					"cardContent":"Here is now Leage Champions trophy looks like"})
-				</div>
-				<div class="video__item">
-					@@include('./partials/news-card/_news-video-card.html',
-					{"image":"/img/videoOne.png",
-					"cardContent":"Here is now Leage Champions trophy looks like"})
-				</div>
-				<div class="video__item">
-					@@include('./partials/news-card/_news-video-card.html',
-					{"image":"/img/videoOne.png",
-					"cardContent":"Here is now Leage Champions trophy looks like"})
-				</div>
-				<div class="video__item">
-					@@include('./partials/news-card/_news-video-card.html',
-					{"image":"/img/videoOne.png",
-					"cardContent":"Here is now Leage Champions trophy looks like"})
-				</div>
-				<p class="link--special">More videos</p>
-			</div> 
-			<div class="inersting">
-				<div class="heading heading--underline">
-					<h2 class="heading__title">Interesting topics </h2>
-				</div>
-				<div class="intersting-item">
-					@@include('./partials/news-card/_news-video-card.html',
-					{"image":"/img/interesting1.png",
-					"cardContent":"Here is now Leage Champions trophy looks like"})
-				</div>
-				<div class="intersting-item"></div>
-				<div class="intersting-item"></div>
-				<div class="intersting-item"></div>
-				<div class="intersting-item"></div>
 			</div>
-		</aside>
-
+			<div class="sprite">
+				<div class="splide">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<img src="./img/girl.jpg" alt="">
+							</li>
+							<li class="splide__slide">
+								<img src="./img/girl.jpg" alt="">
+							</li>
+							<li class="splide__slide">
+								<img src="./img/girl.jpg" alt="">
+							</li>
+						</ul>
+					</div>
+					<script>
+					document.addEventListener( 'DOMContentLoaded', function () {
+					new Splide( '.splide' ).mount();
+				} );
+					</script>
+				</div>
+ 		</main>
+		 <div class="sobchak">
+			<div class="comedy">
+				<div>
+					<h2>Видео</h2>
+				</div>
+				<div class="comedy__item">
+					@@include('./partials/banner/_banner.html',
+					{"imagePath":"./img/sobchak.jpg",
+					"textPath":"Небесные ласточки двухсерийная музыкальная комедия!"})
+				</div>
+				<div class="comedy__item">
+					@@include('./partials/banner/_banner.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Небесные ласточки двухсерийная музыкальная комедия!"})
+				</div>
+				<div class="comedy__item">
+					@@include('./partials/banner/_banner.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Небесные ласточки двухсерийная музыкальная комедия!"})
+				</div>
+				<div class="comedy__item">
+					@@include('./partials/banner/_banner.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Небесные ласточки двухсерийная музыкальная комедия!"})
+				</div>
+				<div class="comedy__item">
+					@@include('./partials/banner/_banner.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Небесные ласточки двухсерийная музыкальная комедия!"})
+				</div>
+				<a href="">больше видео</a>
+		</div> 
+			<div class="statya">
+				<div>
+					<h2>Интересные статьи</h2>
+					</div>
+				<div class="statya__first">
+					@@include('./partials/banner/_sobchak.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Анджелина Джоли сильно похудела"})
+				</div>
+				<div class="statya__first">
+					@@include('./partials/banner/_sobchak.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Анджелина Джоли сильно похудела"})
+				</div>
+				<div class="statya__first">
+					@@include('./partials/banner/_sobchak.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Анджелина Джоли сильно похудела"})
+				</div>
+				<div class="statya__first">
+					@@include('./partials/banner/_sobchak.html',
+					{"imagePath":"/img/sobchak.jpg",
+					"textPath":"Анджелина Джоли сильно похудела"})
+				</div>
+			</div>
+		</div>
   </div>
+ 
+</div>
   <script src="https://kit.fontawesome.com/e49fc50e75.js" crossorigin="anonymous"></script>
   </body>
 </html>
