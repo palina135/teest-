@@ -1,8 +1,8 @@
 @import "./partials/article/article.scss";
 body * {
-  outline: 1px solid #f0f0f0;
+  outline: 1px solid #fff;
  margin: 0 auto;
-}
+ }
 
 .content{
   margin: 0 auto;
@@ -60,16 +60,18 @@ body * {
   &__button{
     border: 2px solid #FD665E;
     background-color: #FD665E;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: #f0f0f0;
-    width: 145px;
+    width: 170px;
     height: 60px;
     display: inline-block;
     text-align: center;
     position: relative;
     top: 100px;
     left: 180px;
+    padding-top: 15px;
+    box-sizing: border-box;
   }
 
   &__home{
@@ -80,6 +82,13 @@ body * {
 }
 
 
+.redhouse{
+  font-size: 110px;
+  color: red;
+  position: relative;
+  left: 340px;
+  bottom: 125px;
+}
 .room{
   height: 900px;
 
@@ -108,16 +117,18 @@ body * {
      &__secondbutton{
       border: 2px solid #FD665E;
       background-color: #FD665E;
-      font-size: 25px;
+      font-size: 20px;
       text-decoration: none;
       color: #f0f0f0;
-      width: 145px;
+      width: 170px;
       height: 60px;
       display: inline-block;
       text-align: center;
       position: relative;
       left: 1010px;
       bottom: 350px;
+      padding-top: 15px;
+      box-sizing: border-box;
      }
 
      &__image{
@@ -125,6 +136,15 @@ body * {
        left: 200px;
        top: 40px;
      }
+}
+
+
+.redarchmove{
+ font-size: 53px;
+ color: red;
+ position: relative;
+ left: 110px;
+ bottom: 63px; 
 }
 
 
@@ -153,13 +173,27 @@ body * {
        width: 330px;
        height: 25px;
        font-size: 26px;
+       font-weight: bold;
        position: relative;
        top: 70px;
        right: 10px;
      }
 }
 
+.blackwebsite{
+font-size: 26px;
+position: relative;
+left: 160px;
+bottom: 33px;
+font-weight: normal;
+}
 
+
+.dots{
+  position: relative;
+  left: 400px;
+  bottom: 165px;
+}
 .project{
   height: 900px;
 
@@ -176,16 +210,18 @@ body * {
      &__thirdbutton{
       border: 2px solid #FD665E;
       background-color: #FD665E;
-      font-size: 25px;
+      font-size: 20px;
       text-decoration: none;
       color: #f0f0f0;
-      width: 145px;
+      width: 170px;
       height: 60px;
       display: inline-block;
       text-align: center;
       position: relative;
       bottom: 260px;
       left: 730px;
+      padding-top: 15px;
+      box-sizing: border-box;
      }
 
      &__picture{
@@ -194,6 +230,16 @@ body * {
        bottom: 50px;
      }
 }
+
+
+.redproject{
+  color: red;
+  font-size: 53px;
+  position: relative;
+  left: 258px;
+  bottom: 60px;
+}
+
 
 
 .banner{
